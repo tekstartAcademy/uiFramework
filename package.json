@@ -1,0 +1,20 @@
+{
+  "name": "uiframework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "open cypress runner": "npx cypress open",
+    "run in headless": "npx cypress run"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browser-fs-access": "^0.35.0",
+    "cypress": "^13.7.2",
+    "pdf-parse": "^1.1.1"
+  },
+  "devDependencies": {
+    "cypress-image-diff-js": "^2.1.4"
+  }
+}
