@@ -10,7 +10,13 @@
 //
 //
 // -- This is a parent command --
-// Cypress.Commands.add('login', (email, password) => { ... })
+Cypress.Commands.add('login', () => { 
+    cy.visit('https://personal-media.vercel.app/');
+    cy.get('#email').type('test@test.com');
+    cy.get('#password').type('test@test.com');
+    cy.get('#submitButton').click();
+    cy.get('.Toastify').should('contain.text', 'Login successful');
+ })
 //
 //
 // -- This is a child command --
